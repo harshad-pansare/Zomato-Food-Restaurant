@@ -21,7 +21,7 @@ My project aims to deploy a dynamic static website resembling Zomato, leveraging
 
 <h2>Core Azure Services:</h2>
 1. Container Registries </br>
-2. Container Instances
+2. Container Instances</br>
 3. Virtual Machines
 
 <h2> AI Services:</h2>
@@ -32,9 +32,9 @@ The primary objective of this project is to demonstrate the process of creating 
 
 <h3>Prerequisites:</h3>
 Azure subscription with access to Azure Portal.</br></br>
-<img src = "https://github.com/harshad-pansare/Zomato-Food-Service/blob/main/subscription.png"></img> </br></br>
+<img src = "https://github.com/harshad-pansare/Zomato-Food-Restaurant/blob/main/subscription.png"></img> </br></br>
 Azure Virtual Machine with a static website deployed and docker installed on the Azure Virtual Machine.</br></br>
-<img src = "https://github.com/harshad-pansare/Zomato-Food-Service/blob/main/myvm.png"></img>
+<img src = "https://github.com/harshad-pansare/Zomato-Food-Restaurant/blob/main/myvm.png"></img>
 
 <h3>Step 1: Create a Dockerfile</h3>
 Create a Dockerfile in the root directory of your static website on the Azure Virtual Machine. The Dockerfile specifies the steps to build the Docker image.
@@ -54,7 +54,7 @@ EXPOSE 80
 <b># Command to run when the container starts</b></br>
 CMD ["nginx", "-g", "daemon off;"]
 
-<img src = "https://github.com/harshad-pansare/Zomato-Food-Service/blob/main/docker%20cmd.png"></img>
+<img src = "https://github.com/harshad-pansare/Zomato-Food-Restaurant/blob/main/docker%20cmd.png"></img>
 
 <h3>Step 2: Build the Docker Image</h3>
 Open a terminal on the Azure Virtual Machine and navigate to the directory containing the Dockerfile. Run the following command to build the Docker image:
@@ -67,7 +67,7 @@ Replace your-image-name with a meaningful name for your image, and tag with a ve
 Navigate to the Azure Portal.
 Create a new Azure Container Registry.
 Note the ACR login server URL, username, and password.</br></br>
-<img src = "https://github.com/harshad-pansare/Zomato-Food-Service/blob/main/registry.png"></img>
+<img src = "https://github.com/harshad-pansare/Zomato-Food-Restaurant/blob/main/registry.png"></img>
 
 <h3>Step 4: Login to Azure Container Registry</h3>
 Run the following command on the Azure Virtual Machine to log in to the ACR using the credentials obtained in Step 3:
@@ -86,7 +86,7 @@ docker push <acr-login-server>/your-image-name:tag
 <h3>Step 6: Deploy Container Instance from ACR</h3>
 Navigate to the Azure Portal.</br>
 Create a new Azure Container Instance</br></br>
-<img src = "https://github.com/harshad-pansare/Zomato-Food-Service/blob/main/instance.png"></img>
+<img src = "https://github.com/harshad-pansare/Zomato-Food-Restaurant/blob/main/instance.png"></img>
 
 
-<img src = "https://github.com/harshad-pansare/Zomato-Food-Service/blob/main/output.png"></img>
+<img src = "https://github.com/harshad-pansare/Zomato-Food-Restaurant/blob/main/output.png"></img>
