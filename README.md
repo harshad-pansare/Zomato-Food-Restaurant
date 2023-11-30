@@ -6,6 +6,9 @@
 <h2>Project Title:</h2>
 Azure-Based Static Website Deployment for Zomato Food and Restaurants
 
+<h2>Project Demo URL:</h2>
+http://mywebapp01.eng5csbdb7awdyax.eastus.azurecontainer.io/
+
 <h2>Problem Statement/Opportunity:</h2>
 Developing a static website similar to Zomato, hosted on Azure services, presents an opportunity to revolutionize the way individuals explore and engage with restaurants and food-related content. Leveraging Azure's robust infrastructure allows for efficient hosting, content delivery acceleration, and streamlined deployment processes.
 
